@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ 
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+ 
+<tiles-definitions>
+    <!--<definition name="/abody" template="/layout.jsp">
+        <put-attribute name="header" value="/index.jsp" />
+        <put-attribute name="menu" value="/logoheader.jsp" />
+  <put-attribute name="one" value="/home.jsp" />
+  <put-attribute name="two" value="/tiles/topics.jsp" />
+  <put-attribute name="one" value="/tiles/comments.jsp" />
+</definition>-->
+
+    <definition name="/home" template="/layout.jsp">
+        <put-attribute name="header" value="/index.jsp" />
+        <put-attribute name="menu" value="/logoheader.jsp" />
+        <put-attribute name="body" value="/home.jsp" />
+        
+        <!--<put-attribute name="footer" value="/footer.jsp" />-->
+        
+    </definition> 
+    <definition name="/home1" extends="/home">
+        <put-attribute name="header" value="/index1.jsp" />
+    </definition>
+   <definition name="/checkout" extends="/home">
+        <put-attribute name="body" value="/checkout.jsp" />
+    </definition>
+    <definition name="/mob" extends="/home">
+        <put-attribute name="body" value="/mob.jsp" />
+    </definition>
+     <definition name="/laptop" extends="/home">
+        <put-attribute name="body" value="/laptop.jsp" />
+    </definition>
+    <definition name="/homeapp" extends="/home">
+        <put-attribute name="body" value="/homeapp.jsp" />
+    </definition>
+    <definition name="/novel" extends="/home">
+        <put-attribute name="body" value="/novel.jsp" />
+    </definition>
+     <definition name="/competitive" extends="/home">
+        <put-attribute name="body" value="/competitive.jsp" />
+    </definition>
+    <definition name="/technical" extends="/home">
+        <put-attribute name="body" value="/technical.jsp" />
+    </definition>
+    <definition name="/electronics" extends="/home">
+        <put-attribute name="body" value="/electronics.jsp" />
+    </definition>
+    <definition name="/cosmetics" extends="/home">
+        <put-attribute name="body" value="/cosmetics.jsp" />
+    </definition>
+    <definition name="/books" extends="/home">
+        <put-attribute name="body" value="/books.jsp" />
+    </definition>
+    <definition name="/detail" extends="/home">
+        <put-attribute name="body" value="/detail.jsp" />
+    </definition>
+     <definition name="/men" extends="/home">
+        <put-attribute name="body" value="/men.jsp" />
+    </definition>
+    <definition name="/women" extends="/home">
+        <put-attribute name="body" value="/women.jsp" />
+    </definition>
+    <definition name="/child" extends="/home">
+        <put-attribute name="body" value="/child.jsp" />
+    </definition>
+    <definition name="/cloth" extends="/home">
+        <put-attribute name="body" value="/cloth.jsp" />
+    </definition>
+     <definition name="/elec" extends="/home">
+        <put-attribute name="body" value="/elec.jsp" />
+    </definition>
+    <definition name="/acce" extends="/home">
+        <put-attribute name="body" value="/acce.jsp" />
+    </definition>
+    <definition name="/cart" extends="/home">
+        <put-attribute name="body" value="/cart.jsp" />
+    </definition>
+    <definition name="/search" extends="/home">
+        <put-attribute name="body" value="/search.jsp" />
+    </definition>
+     <definition name="/login" extends="/home">
+        <put-attribute name="body" value="/home.jsp" />
+    </definition>
+    <definition name="/hp" extends="/home">
+        <put-attribute name="body" value="/err.jsp" />
+    </definition>
+     <definition name="/signup" extends="/home">
+         
+        <put-attribute name="body" value="/home.jsp" />
+    </definition>
+    <definition name="/disp" extends="/home">
+         
+        <put-attribute name="body" value="/disp.jsp" />
+    </definition>
+</tiles-definitions>

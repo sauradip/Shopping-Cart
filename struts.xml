@@ -1,0 +1,109 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <!-- Configuration for the default package. -->
+    <package name="default" extends="struts-default">
+        <result-types>
+            <result-type name="tiles"
+                         class="org.apache.struts2.views.tiles.TilesResult" />
+        </result-types>
+        <action name="start" method="getNames" class="com.hp.Util">
+                     <result name="success" type="tiles">/home</result>
+       
+            
+        </action>
+        <action name="checkout" class="com.hp.checkout">
+            <result name="success" type="tiles">/checkout</result>
+        </action>
+        <action name="mob" class="com.hp.mob">
+            <result name="success" type="tiles">/mob</result>
+        </action>
+        <action name="laptop" class="com.hp.laptop">
+            <result name="success" type="tiles">/laptop</result>
+        </action>
+        <action name="homeapp" class="com.hp.homeapp">
+            <result name="success" type="tiles">/homeapp</result>
+        </action>
+        <action name="novel" class="com.hp.novel">
+            <result name="success" type="tiles">/novel</result>
+        </action>
+        <action name="competitive" class="com.hp.competitive">
+            <result name="success" type="tiles">/competitive</result>
+        </action>
+        <action name="technical" class="com.hp.technical">
+            <result name="success" type="tiles">/technical</result>
+        </action>
+        <action name="electronics" class="com.hp.electronics">
+            <result name="success" type="tiles">/electronics</result>
+        </action>
+        <action name="cosmetics" class="com.hp.cosmetics">
+            <result name="success" type="tiles">/cosmetics</result>
+        </action>
+        <action name="books" class="com.hp.books">
+            <result name="success" type="tiles">/books</result>
+        </action>
+         <action name="detail" class="com.hp.detail">
+            <result name="success" type="tiles">/detail</result>
+        </action>
+        <action name="men" class="com.hp.men">
+            <result name="success" type="tiles">/men</result>
+        </action>
+        <action name="women" class="com.hp.women">
+            <result name="success" type="tiles">/women</result>
+        </action>
+        <action name="child" class="com.hp.child">
+            <result name="success" type="tiles">/child</result>
+        </action>
+        <action name="cloth" class="com.hp.cloth">
+            <result name="success" type="tiles">/cloth</result>
+        </action>
+        <action name="elec" class="com.hp.elec">
+            <result name="success" type="tiles">/elec</result>
+        </action>
+        <action name="acce" class="com.hp.acce">
+            <result name="success" type="tiles">/acce</result>
+        </action>
+        <action name="search" class="com.hp.search" >
+            <result name="success" type="tiles">/search</result>
+        </action>
+         <action name="cart" class="com.hp.cart">
+            
+            <result name="success" type="tiles">/cart</result>
+            
+           
+        </action>
+         <action name="remove" class="com.hp.cart" method="remove">
+            
+            <result name="success" type="tiles">/cart</result>
+            
+           
+        </action>
+        <action name="remove" class="com.hp.cart" method="remove">
+            
+            <result name="success" type="tiles">/cart</result>
+            
+           
+        </action>
+        <action name="disp" class="com.hp.cart" method="disp">
+            <result name="success" type="tiles">/disp</result>
+        </action>
+        <action name="login" class="com.hp.login">
+            <result name="success" type="tiles">/login</result>
+            <result name="input">newjsp1.jsp</result>
+        </action>
+         <action name="signup" class="com.hp.signup">
+             <interceptor-ref name="defaultStack"/>
+            <interceptor-ref name="fileUpload">
+                <param name="allowedTypes">image/jpg,image/png,image/JPEG,image/JPG,image/jpeg</param>
+                <param name="maximumSize">2012345</param>
+            </interceptor-ref>
+            
+            <result name="success" type="tiles">/signup</result>
+            
+        </action>
+        <action name="empPic" method="getEMpPic" class="com.hp.mob"/>
+         <action name="desc" method="getDesc" class="com.hp.detail"/>
+    </package>
+</struts>
